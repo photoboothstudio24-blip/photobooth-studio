@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --bg: 244 243 248;
+  --fg: 22 19 30;
+  --muted: 98 93 112;
+  --card: 255 255 255;
+  --line: 224 221 233;
+  --accent: 200 36 70;
+  --accent-fg: 255 255 255;
+  --flash: 255 216 77;
+}
+.dark {
+  --bg: 18 16 22;
+  --fg: 244 241 250;
+  --muted: 160 154 176;
+  --card: 28 25 34;
+  --line: 52 47 62;
+  --accent: 255 92 119;
+  --accent-fg: 24 12 16;
+  --flash: 255 216 77;
+}
+html { scroll-behavior: smooth; scroll-padding-top: 5rem; }
+body { background: rgb(var(--bg)); color: rgb(var(--fg)); }
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *, *::before, *::after { animation: none !important; transition: none !important; }
+}
